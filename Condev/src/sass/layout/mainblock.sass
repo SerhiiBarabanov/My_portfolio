@@ -1,0 +1,86 @@
+$font-color: #333333
+$bg-color: #ffd21d
+
+.mainblock
+	@include media-tablet
+		display: flex
+		flex-flow: row nowrap
+
+.mainblock--margin-top
+	margin-top: 50px
+	@include media-tablet
+		margin-top: 62px
+	@include media-desctop
+		margin-top: 124px
+
+.mainblock__desc, .mainblock__img-wrap
+	@include media-tablet
+		width: 50%
+
+.mainblock__desc
+	padding: 30px 15px
+	@include media-desctop
+		padding: 80px 60px
+
+.mainblock__desc--order
+	@include media-tablet
+		order: 2
+
+.mainblock__title-wrap
+	text-align: center
+
+.mainblock__title
+	color: $font-color
+	display: inline-block
+	@include font-size(36)
+	position: relative
+	line-height: 36px
+	&:after
+		content: ''
+		background: $bg-color
+		width: 30px
+		height: 3px
+		position: absolute
+		bottom: -15px
+		right: 50%
+		transform: translateX(50%)
+		@include media-desctop
+			width: 40px
+			bottom: -30px
+	@include media-desctop
+		@include font-size(46)
+
+.mainblock__text
+	font-weight: 300
+	color: $font-color
+	margin-top: 30px
+	text-align: center
+	@include media-desctop
+		@include font-size(20)
+		margin-top: 60px
+
+.mainblock__btn-wrap
+	text-align: center
+
+.mainblock__btn
+	padding: 15px 20px
+	color: #162240
+	text-transform: uppercase
+	letter-spacing: 2px
+	@include font-size(10)
+	margin-top: 20px
+	display: inline-block
+	background: $bg-color
+	border-radius: 30px
+	@include media-desctop
+		margin-top: 40px
+		padding: 20px 40px
+		@include font-size(14)
+
+.mainblock__img-wrap
+	font-size: 0
+
+.mainblock__img
+	width: 100%
+	height: 100%
+

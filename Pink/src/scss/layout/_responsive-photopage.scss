@@ -1,0 +1,386 @@
+/***responsive for photo page
+     - photo page responsive tablet
+     - photo__rewiew section responsive tablet
+     - photo/customer__card section responsive tablet
+     - photo/upload section responsive tablet
+     - photoupload section responsive tablet
+    ***/
+/* responsive for photo page */
+
+ /* photo page responsive*/
+
+
+@media screen and (max-width: 940px) {
+
+    /* photo__panorama section responsive tablet */
+
+    .photo__panorama-btn {
+        right: 100px; 
+    }
+
+    /* photo__rewiew section responsive tablet */
+
+    .photo__rewiew{
+        width: 700px;
+    }
+
+    .rewiew{       
+        width: 650px; 
+    }
+
+        .rewiew__name-and-date{
+            width: 440px;
+        }
+
+
+    /* photo/customer__card section responsive tablet */
+
+    .customers-cards{
+        width: 700px;   
+    }
+
+    .customers-cards__list{
+        width: 700px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .customers-cards__item{
+        margin-top: 30px;
+    }
+
+        .rewiew__customers-cards{
+            width: 232px; 
+            padding: 30px 0 0 0;                     
+        }
+
+            .rewiew__name-and-date--customers-cards{
+                width: 100%;
+                margin: 0;
+            }
+
+            .rewiew__text-customers--cards{
+                margin: 12px 0 0 0;
+                line-height: 1.5rem;
+            }
+
+            .rewiew__like-customers--cards{
+                margin: 24px 0 0 0;
+            }
+
+
+    /* photo/upload section responsive tablet */            
+                    
+    .upload{
+        width: 100%;
+    }
+
+        .app--wrap{
+            align-items: flex-end;
+        }
+    
+            .crop{                
+                width: 285px;               
+            }
+
+            .upload__icons{
+                width: 25px;
+                height: 25px;       
+            }
+
+            .tools-for-picture{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 45px;
+                }
+
+                .crop__slider{
+                    margin-left: 40px;
+                }
+
+            .buttons{                    
+                flex-direction: column;
+                margin-top: 70px;
+            }    
+
+                .tools__btn{                      
+                    width: 260px;                        
+                }
+
+                    .tools__btn--opacity{
+                    margin-top: 25px;
+                }
+
+
+                .crop__slider[type=range] {                    
+                width: 200px;                    
+            } 
+
+            .crop__slider[type='range']::-webkit-slider-thumb {
+                width: 13px;
+                height: 13px;
+                
+            }
+
+
+          
+}
+
+
+
+
+ /* photo page responsive tablet */
+
+@media screen and (max-width: 700px) {
+
+     .photo__preview-title{
+         width: 320px;
+         font-size: 1rem;
+     }
+
+    /* photo__panorama section responsive tablet */
+
+    .photo__panorama-btn {
+        right: 100px; 
+    }
+
+    /* photo__rewiew section responsive tablet */
+
+    .rewiew{       
+        width: 570px; 
+    }
+
+        .rewiew__name-and-date{
+            width: 440px;
+        }
+
+
+    /* photo/customer__card section responsive tablet */
+
+    .customers-cards__item{
+        margin-top: 30px;
+    }
+
+        .rewiew__customers-cards{
+            width: 232px; 
+            padding: 30px 0 0 0;                     
+        }
+
+            .rewiew__name-and-date--customers-cards{
+                width: 100%;
+                margin: 0;
+            }
+
+            .rewiew__text-customers--cards{
+                margin: 12px 0 0 0;
+                line-height: 1.5rem;
+            }
+
+            .rewiew__like-customers--cards{
+                margin: 24px 0 0 0;
+            }
+
+
+    /* photo/upload section responsive tablet */            
+                    
+    .upload{
+        width: 100%;
+    }
+
+        .app--wrap{
+            align-items: flex-end;
+        }
+    
+            .crop{                
+                width: 285px;               
+            }
+
+            .upload__icons{
+                width: 25px;
+                height: 25px;       
+            }
+
+            .tools-for-picture{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 45px;
+                }
+
+                .crop__slider{
+                    margin-left: 40px;
+                }
+
+            .buttons{                    
+                flex-direction: column;
+                margin-top: 70px;
+            }    
+
+                .tools__btn{                      
+                    width: 260px;                        
+                }
+
+                    .tools__btn--opacity{
+                    margin-top: 25px;
+                }
+
+
+                .crop__slider[type=range] {                    
+                width: 200px;                    
+            } 
+
+            .crop__slider[type='range']::-webkit-slider-thumb {
+                width: 12px;
+                height: 12px;
+                
+            }
+
+
+          
+}
+
+/* photo page responsive mobile */
+
+@media screen and (max-width: 699px) {
+
+
+
+    /* photo__panorama section responsive mobile */
+
+    .photo__panorama-header{
+        padding: 50px 0;
+    }
+
+    .photo__panorama-btn {
+        right: 20px;
+        top: 0; 
+    }
+
+    /* photo__rewiew section responsive modile */
+
+    .photo__rewiew{
+        width: 100%;
+    }
+
+    .rewiew{       
+        width: 250px; 
+    }
+
+        .rewiew__name-and-date{
+            width: 100%;
+            text-align: center;
+        }
+
+        .rewiew__like{
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;        
+        }
+
+        .rewiew__text{
+            line-height: 1.2rem;
+            text-align: center;
+        }
+
+
+
+    /* photo/customer__card section responsive mobile */
+
+    .customers-cards{
+        width: 320px;   
+    }
+
+    .customers-cards__list{
+        width: 280px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+
+    .customers-cards__item{
+        margin-top: 30px;
+    }
+
+        .rewiew__customers-cards{
+            width: 232px; 
+            padding: 30px 0 0 0;                     
+        }
+
+            .rewiew__name-and-date--customers-cards{
+                width: 100%;
+                margin: 0;
+            }
+
+            .rewiew__text-customers--cards{
+                margin: 12px 0 0 0;
+                line-height: 1.5rem;
+            }
+
+            .rewiew__like-customers--cards{
+                margin: 24px 0 0 0;
+            }
+
+
+    /* photo/upload section responsive mobile */            
+                    
+    .upload{
+        width: 100%;
+    }
+
+        .app--wrap{
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .app__img{
+            width: 280px;
+        }
+    
+            .crop{                
+                width: 280px;               
+            }
+
+
+            .tools-for-picture{
+                padding-left: 0px;
+                margin-top: 30px;
+            }
+
+                .crop__slider{
+                    margin-left: 40px;
+                }
+
+            .buttons{                    
+                flex-direction: column;
+                margin-top: 30px;
+            }    
+
+                .tools__btn{                      
+                    width: 260px;                        
+                }
+
+                    .tools__btn--opacity{
+                    margin-top: 25px;
+                }
+
+
+                .crop__slider[type=range] {                    
+                width: 200px;                    
+            } 
+
+            .crop__slider[type='range']::-webkit-slider-thumb {
+                width: 12px;
+                height: 12px;
+                
+            }
+
+
+
+            .photo__panorama__title{       
+        width: 300px;        
+        font-size: 0.875rem; 
+    }
+
+          
+}

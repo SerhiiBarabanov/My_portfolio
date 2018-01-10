@@ -1,0 +1,78 @@
+.fourth-section
+	background: #ffe92f
+
+.section__title--center, .section__text--center
+	color: #000
+	text-align: center
+
+.section__title--center
+	margin-bottom: 38px
+
+.desc-wrap
+	margin: 0 270px
+
+.gallery__list
+	display: flex
+	flex-flow: row wrap
+	font-size: 0
+	margin-top: 50px
+
+.gallery__item
+	box-shadow: 0 0 15px rgba(0, 0, 0, .5)
+	position: relative
+	&:first-child
+		margin-bottom: 30px
+		margin-right: 30px
+	&:nth-child(2)
+		box-shadow: none
+		&:after
+			display: none
+	&:nth-child(3)
+		margin-right: 30px
+	&:after
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		pointer-events: none
+		transition: background .2s ease-in-out
+	&:hover:after
+		background: rgba(0, 196, 196, .2)
+
+.gallery__sub-item
+	box-shadow: 0 0 15px rgba(0, 0, 0, .5)
+	position: relative
+	&:first-child
+		margin-bottom: 30px
+	&:after
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		pointer-events: none
+		transition: background .2s ease-in-out
+	&:hover:after
+		background: rgba(0, 196, 196, .2)
+
+.gallery__img--first
+	width: 770px
+	height: 550px
+
+.gallery__img--second
+	width: 370px
+	height: 260px
+
+.gallery__img
+	width: 570px
+	height: 400px
+
+.section-btn-wrap
+	text-align: center
+	margin-top: 50px
+
+.section-btn--bg
+	background: #5585a2

@@ -1,0 +1,53 @@
+.footer {
+	background: #39312f;
+	padding: 25px 15px 35px 15px;
+	@include mediumDevice {
+		padding: 90px 0; 
+	}
+}
+
+.communication {
+	text-align: center;
+}
+
+.social__list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	@include smallDevice {
+		margin-bottom: 30px;
+	}
+}
+
+.social__item {
+	margin-right: 30px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+
+.social__link {
+	font-size: 30px;
+	color: #fff;
+	&:active {
+		color: $accent-color;
+	}
+	@include largeDevice {
+		transition: color .2s ease-in;
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+
+.communication__address {
+	font-style: normal;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.87rem;
+	color: #fff;
+	@include smallDevice {
+		font-size: 1rem;
+	}
+}

@@ -1,0 +1,457 @@
+/*
+	Include libs files
+*/
+
+@import "libs.css";
+
+* {
+	box-sizing: border-box;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, p {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: Georgia;
+	font-weight: 400;
+}
+
+.container {
+	position: relative;
+}
+
+/*
+	0. Components
+*/
+
+.page-title {
+	position: relative;
+	text-align: center;
+}
+
+.page-title__desc {
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+	margin: 0;
+	background: #fff;
+	z-index: 99;
+	position: relative;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.page-title__line {
+	background: #ebebeb;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+/*
+	1. Header
+*/
+
+
+/*
+	1.1 Top-header
+*/
+
+
+.header__top {
+	background: #fff;
+	padding: 9px 0;
+	border-bottom: 1px solid #97455f;
+	position: relative;
+	vertical-align: middle;
+}
+
+.hide-btn {
+	background: #97455f;
+	width: 30px;	
+	height: 25px;
+	position: absolute;
+	right: 15px;
+	bottom: -35px;
+	cursor: pointer;
+	border-radius: 0 0 5px 5px;
+}
+
+.hide-btn:before {
+	content: '';
+	height: 1px;
+	width: 10px;
+	background: #fff;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+}
+
+/*
+	1.1.1 Social
+*/
+
+.social__item {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.social__item:first-child {
+	margin-left: 0;
+}
+
+.social__link {
+	width: 32px;
+	height: 32px;
+	background: #d2d2d2;
+	border-radius: 50%;
+	display: block;
+	transition: all .2s ease-in-out;
+	color: #fff;
+	text-align: center;
+	font-size: 1.125rem;
+	line-height: 2rem;
+}
+
+.social__link-hover:hover {
+	background: #ee802f;
+	color: #fff;
+}
+
+/*
+	1.1.2 Navigation
+*/
+
+.nav {
+	text-align: right;
+}
+
+.nav__list {
+	display: inline-block;
+}
+
+.nav__item {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 5px 0;
+}
+
+.nav__item:first-child {
+	margin-left: 0;
+}
+
+.nav__link {
+	color: #97455f !important;
+	font-family: Georgia;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 0.875rem;
+	position: relative;
+}
+
+.nav__item:not(:last-child) .nav__link:before {
+	content: '';
+	width: 1px;
+	height: 100%;
+	background: #97455f;
+	position: absolute;
+	right: -6px;
+	top: 0;
+}
+
+/*
+	1.2 Bottom header
+*/
+
+.header__bottom {
+	background: #ebebeb;
+	padding: 63px 0 270px 0;
+}
+
+.header__title, .header__desc {
+	display: inline-block;
+}
+
+.header__title {
+	font-family: Georgia;
+	color:  #333333;
+	font-size: 1.625rem;
+	font-weight: 400;
+	line-height: 1.625rem;
+	text-transform: uppercase;
+	padding-right: 17px;
+}
+
+.header__title::first-letter {
+	font-size: 2.25rem;
+	line-height: 2.25rem;
+}
+
+.header__desc {
+	font-family: Georgia;
+	color:  #999;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 0.975rem;
+	position: relative;
+}
+
+.header__desc:before {
+	content: '';
+	height: 100%;
+	width: 1px;
+	background: #999;
+	position: absolute;
+	left: -7px;
+}
+
+.form {
+	font-size: 0;
+	text-align: right;
+}
+
+.form__search {
+	width: 218px;
+	height: 33px;
+	border: none;
+	outline-color: #97455f;
+	font-family: Georgia;
+	font-size: 0.75rem;
+	padding: 10px;
+	border-radius: 5px 0 0 5px;
+}
+
+::-webkit-input-placeholder {
+	font-family: Georgia;
+	color: #999;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 0.9rem;
+}
+
+::-moz-placeholder {
+	font-family: Georgia;
+	color: #999;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 0.9rem;
+}
+
+
+.form__button {
+	background-color:  #97455f;
+	width: 75px;
+	height: 33px;
+	color: #fff;
+	font-family: Georgia;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 0.9rem;
+	border: none;
+	border-radius: 0 5px 5px 0;
+}
+
+.navigation-wrap {
+	position: absolute;
+	width: 97.5%;
+	top: 100px;
+}
+
+.main-nav {
+	background: #97455f;
+	border-radius: 5px 5px 0 0;
+}
+
+.main-nav__list {
+	font-size: 0;
+}
+
+.main-nav__item {
+	display: inline-block;
+	transition: all .2s ease-in-out;
+}
+
+.main-nav__link {
+	color: #fff !important;
+	font-family: Georgia;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 0.75rem;
+	text-transform: uppercase;
+	padding: 20px 15px;
+	display: block;
+	text-decoration: none !important;
+}
+
+.main-nav__item:hover {
+	background: #6a3144;
+}
+
+.main-nav__item:first-child:hover {
+	background: #6a3144;
+	border-radius: 5px 0 0 0;
+}
+
+.slider {
+	background: #fff;
+	padding: 30px;
+}
+
+.slider__picture {
+	height: 360px;
+	background: #333;
+}
+
+.slider__desc {
+	position: absolute;
+	right: 45px;
+	bottom: 55px;
+	background: rgba(255, 255, 255, 0.6);
+	font-family: Georgia;
+	color:  #383838;
+	padding: 20px;
+	width: 42%;
+}
+
+.slider__title {
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 2rem;	
+	margin-bottom: 20px;
+}
+
+.slider__text {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+
+/*
+	2. Posts
+*/
+
+.maincontent {
+	margin-top: 280px;
+}
+
+
+.posts {
+	margin-top: 40px;
+}
+
+.posts__item {
+	margin-bottom: 40px;
+}
+
+
+.posts__img {
+	width: 64px;
+	height: 64px;
+	background: #353535;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.posts__desc-wrap {
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	margin-left: 10px;
+}
+
+.posts__title {
+	margin-top: 0;
+	font-size: 1rem;
+	color: #97455f;
+	font-family: Georgia;
+}
+
+.posts__desc {
+	margin-top: 10px;
+	font-size: 0.8125rem;
+	line-height: 1.125rem;
+	color: #999;
+	font-family: Georgia;
+}
+
+.testimonials {
+	margin-top: 10px;
+}
+
+.testimonials__item {
+	margin-top: 30px;
+}
+
+.testimonials__img {
+	width: 130px;
+	height: 130px;
+	background: #999;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.testimonials__desc-wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: 285px;
+	margin-left: 20px;
+}
+
+.contact-btn-wrap {
+	margin-top: 50px;
+	background: #97455f;
+	padding: 25px 30px;
+	border-radius: 10px;
+}
+
+.contact-btn-title, .contact-btn-text {
+	font-family: Georgia;
+	color:  #e5e5e5;
+	font-weight: 400;
+}
+
+.contact-btn-title {
+	font-size: 2.25rem;
+}
+
+.contact-btn-text {
+	font-size: 1.125rem;
+}
+
+.contact-btn {
+	text-align: right;
+}
+
+.contact-btn__link {
+	font-family: Georgia;
+	color:  #97455f;
+	font-size: 1.625rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	background: #fff;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.contact-btn__link:hover {
+	text-decoration: none;
+	color:  #97455f;
+}
+

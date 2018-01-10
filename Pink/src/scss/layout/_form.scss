@@ -1,0 +1,274 @@
+.form-preview {
+    background: url('../img/back-desktop.jpg')  center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 180px 0 100px 0;
+}
+
+    .form-preview__title {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 3.125rem;
+        font-weight: 300;
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+// заголовок страницы форм
+
+.form-heder {
+    padding: 100px 0 75px 0;
+}
+    .form-desc {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 760px; 
+        @include textDefolt;
+    }
+
+// отступы и бордер рамочкам форм
+
+    fieldset {
+        padding: 0;
+        border: none;
+        border: 2px solid #e5e5e5;
+    }
+
+
+    label{  //cursor pointer всем лейблам
+        cursor: pointer;
+    }
+
+// отступ и текст заголовкам в рамочках
+
+    legend {
+        padding: 0 30px;
+        @include textAccent;
+        text-align: center;
+    }
+
+    .input-size {  
+        outline-color: $colorAccent;
+        padding: 0 0 0 20px;
+        width: 76%;              // проверить значение
+        height: 59px;
+        border: none;
+        border: 2px solid #e5e5e5;
+        transition: border .2s ease-in-out;
+            &:hover{border-color: $colorHover;}
+    }
+
+    .input-size:active{
+        border: 2px solid $colorAccent;
+    }
+        .label {
+            @include textAccent;
+            margin: 0 20px 0 0;
+        }
+
+    
+/***
+*
+* FORM PERSONAL
+*
+***/
+
+.form__personal-info {
+   @include flex; 
+   margin-bottom: 60px;   //нижний отступ секции персон.данных
+}
+
+.name,
+.fullname,
+.middlename {
+    @include flex; 
+}
+
+    .left-column {
+        width: 50%;
+        padding: 0 35px 0 0; 
+    }
+
+    .fullname,
+    .name {
+        margin: 0 0 55px 0; // отступ между имя и фамилия инпутами
+    }
+
+    
+/***
+*
+* ATTACHMENT FORM
+*
+***/
+
+.right-column {
+    width: 50%;
+    padding: 0 0 0 35px;
+}
+
+.input-attachment__wrap {
+    padding: 40px 0 55px 75px;
+}
+
+.input-attachment {
+    margin-bottom: 38px;
+    height: 36px;
+    position: relative;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        >label{
+            @include textDefolt; 
+            padding-left: 59px;
+        }
+}
+
+
+/***
+*
+* CONTACTS INFO
+*
+***/
+
+.contacts-form {
+    margin-bottom: 60px;
+}
+
+.contacts {
+    @include flex;  
+    align-items: flex-start;
+    padding: 25px 60px 20px 60px;
+}
+
+.phone-number,
+.email {
+    @include flexColumn;
+    align-items: stretch;
+}
+
+.tel,
+.mail {
+    position: relative;
+    background: none;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.label-phone,
+.label-email {
+    margin: 0 0 0 20px;
+}
+
+.input-tel,
+.input-email {
+    position: relative;
+    width: 100%;
+    height: 59px;
+    margin-bottom: 20px;
+        &:hover{border-color: $colorHover;}
+}
+
+    .input-tel::before {
+        content: '';
+        position: absolute;
+        background: url('../img/icon/phone.png') right center no-repeat;
+        background-size: cover; 
+        width: 57px;
+        height: 57px;
+        top: 0;
+        right: 0;
+    }
+    .input-email::before {
+        content: '';
+        position: absolute;
+        background: url('../img/icon/email.png') right center no-repeat;
+        background-size: cover; 
+        width: 57px;
+        height: 57px;
+        top: 0;
+        right: 0;
+    }
+
+/***
+*
+* ACHIVEMENTS FORM
+*
+***/
+
+.achievements-form {
+    margin-bottom: 60px;
+}
+
+    .achievements {
+        margin: -23.5px -60px 0 0;
+    }
+
+    .input-achievements{
+        position: relative;
+        margin: 23.5px 0;
+    }
+
+    .label-achievements{
+        padding-left: 60px;
+    }
+    
+    .achievements {
+        @include flex; 
+        flex-flow: row wrap;
+        align-content: space-between;
+        padding: 40px 60px 60px 60px;
+    }
+
+    .input-achievements {
+        height: 40px;
+        width: 260px;
+    }
+
+    .input-achievements>label {
+        @include textDefolt;
+    }
+
+/***
+*
+* EMOTION
+*
+***/
+
+textarea {
+    width: 100%;
+    height: 125px;
+    outline-color: $colorAccent;
+    border: none;
+    border: 2px solid #e5e5e5;
+    padding: 23px 0 0 20px;
+    transition: border .2s ease-in-out;
+    &:hover{border-color: $colorHover;}
+}
+
+.emotions-form {
+    margin-bottom: 70px;
+}
+
+.emotions {
+    padding: 30px 60px 45px 60px;
+}
+
+/***
+*
+* SUBMIT FORM
+*
+****/
+
+.submit {
+    @include flex;
+    &>p>.attention{
+       color: $colorAccent; 
+    }
+    .attention-text {
+        margin: 0;
+    }
+}
+

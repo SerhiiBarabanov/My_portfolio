@@ -1,0 +1,66 @@
+.seventh-section
+	height: 870px
+	background: url(../img/img312.png) center bottom no-repeat
+	background-size: cover
+
+.section__text--mb
+	margin-bottom: 50px
+	padding: 0 389px
+
+.contact-form
+	display: flex
+	flex-flow: column nowrap
+	width: 500px
+
+.contact__text-field
+	margin-bottom: 15px
+	height: 50px
+	padding-left: 20px
+	border: none
+	background: rgba(0, 196, 196, .5)
+	color: #fff
+	@include raleway-bold
+	@include font-size(15)
+	outline: none
+	transition: all .3s ease-in-out
+	&:focus
+		background: rgba(0, 196, 196, 1)
+		border-left: 5px inset #355b82
+	&::-webkit-input-placeholder
+		@include raleway-light
+		@include font-size(15)
+		color: #fff
+	&::-moz-placeholder
+		@include raleway-light
+		@include font-size(15)
+		color: #fff
+	&:-ms-input-placeholder
+		@include raleway-light
+		@include font-size(15)
+		color: #fff
+	&:-moz-placeholder
+		@include raleway-light
+		@include font-size(15)
+		color: #fff
+
+.contact__text-field--height
+	height: 250px
+	padding-top: 20px
+
+.address
+	margin-left: 170px
+
+.address__item
+	margin-bottom: 20px
+
+.address__title
+	@include raleway-bold
+	@include font-size(15)
+	font-style: normal
+	text-transform: uppercase
+
+.address__desc
+	@include raleway-light
+	@include font-size(15)
+	font-style: normal
+	

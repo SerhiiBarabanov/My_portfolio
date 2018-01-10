@@ -1,0 +1,44 @@
+.logo-footer{
+    @include center-logo;
+    }
+.logo-footer--bg {
+    background: url('../img/tablet-img/logotype-blue-tablet-svg.svg') center center no-repeat;
+    background-size: cover;
+    width: 147px;
+    height: 40px;
+}
+.main-footer {
+    padding: 70px 0;
+}
+
+.footer-content {
+    @include flex;
+}
+
+.developed {
+    @include flex; 
+}
+
+.social__list {
+    @include flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-play{
+  margin-left: 3px;
+}
+.developed {
+    width: 155px;
+    vertical-align: center;
+}
+.developed-title {
+    color: #283645;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    margin: 0 15px 0 0;
+    padding: 0;
+}

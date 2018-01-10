@@ -1,0 +1,39 @@
+.section__text
+	padding: 0 168px
+
+.section__sign--after
+	margin-top: 40px
+	padding-bottom: 20px
+	position: relative
+	text-align: center
+	&:after
+		content: ''
+		width: 70px
+		height: 2px
+		background: $common-color
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+
+.arrow-wrap
+	padding-top: 55px
+	padding-bottom: 90px
+	border-bottom: 1px solid rgba(0, 0, 0, .1)
+	text-align: center
+
+.arrow
+	vertical-align: middle
+
+.arrow__text
+	@include font-montserrat-regular
+	@include font-size(14)
+	vertical-align: middle
+	margin: 0 15px
+
+.client__list
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-around
+	align-items: center
+	padding: 100px 0

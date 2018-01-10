@@ -1,0 +1,22 @@
+.about {
+	padding: 30px 15px;
+	text-align: center;
+
+	@include mediumDevice {
+		width: 730px;
+		margin: 0 auto;
+		padding: 100px 0;
+	}
+}
+
+.headline--about {
+	text-transform: none;
+	margin-bottom: 30px;
+	padding-top: 0;
+	&:before {
+		display: none;
+	}
+	> span {
+		text-decoration: underline;
+	}
+}

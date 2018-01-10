@@ -1,0 +1,40 @@
+.header
+	width: 100%
+	position: absolute
+	background: transparent
+	border-bottom: 1px solid rgba(255, 255, 255, .1)
+
+.header-wrap
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: center
+
+.logo__link
+	@include font-porter
+	@include font-size(30)
+	color: #fff
+	letter-spacing: 12px
+	padding: 25px 0
+	transition: color .5s ease-in-out
+	&:hover
+		color: $common-color
+
+.title__letter
+	color: $common-color
+
+.nav__item
+	display: inline-block
+	margin-right: 55px
+	&:last-child
+		margin-right: 0
+
+.nav__link
+	@include font-oswald
+	@include font-size(13)
+	color: #fff
+	text-transform: uppercase
+	transition: all .3s ease-in-out
+	&:hover
+		color: $common-color
+		transform: scale(1.3)

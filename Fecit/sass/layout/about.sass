@@ -1,0 +1,81 @@
+.second-section
+	background: #f0f0f0
+	position: relative
+
+.heading
+	@include font-oswald
+	@include font-size(14)
+	text-transform: uppercase
+	color: $common-color
+	letter-spacing: 1px
+	text-align: center
+	margin-bottom: 30px
+
+.section__text
+	@include font-montserrat-medium
+	@include font-size(28)
+	text-align: center
+
+.about__img-wrap
+	position: absolute
+	left: 50%
+	top: 270px
+	transform: translateX(-50%)
+	&:after
+		content: ''
+		width: 42px
+		height: 48px
+		background: url(../img/play.png) center center no-repeat
+		background-size: cover
+		@include Center
+		z-index: 999
+
+.about__img
+	width: 770px
+	height: 450px
+	position: relative
+
+
+.about__card
+	display: flex
+	flex-flow: row nowrap
+	margin-top: 380px
+
+.card-left
+	width: 500px
+	padding: 90px 73px 90px 0
+	display: flex
+	flex-flow: row nowrap
+
+.card-left__img
+	width: 70px
+	height: 70px
+	border-radius: 50%
+	margin-top: 103px
+
+.card-left__desc
+	padding-left: 30px
+
+.desc__text
+	@include font-montserrat-regular
+	@include font-size(22)
+	margin-top: 68px
+	margin-bottom: 55px
+
+.section__sign
+	@include font-montserrat-bold
+	@include font-size(14)
+	color: rgba(121, 121, 121, .5)
+
+.card-right
+	width: 570px
+	padding: 180px 60px 70px 60px
+	background: #fff
+
+.card-right__text
+	@include font-montserrat-light
+	@include font-size(16)
+	line-height: 1.75rem
+
+.card-right__text--padding
+	padding-bottom: 40px	

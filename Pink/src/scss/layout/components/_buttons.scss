@@ -1,0 +1,54 @@
+
+.btn__link {
+    padding: 14px 30px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 1.313rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    transition: color .2s ease-in-out,
+                background .2s ease-in-out;
+}
+
+.btn__link:hover {
+    background: #fff;
+    color: $colorAccent;
+}
+
+.btn__link:active {
+    color: $colorClick;
+}
+
+.submit-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    background-color: #2aab6d;
+    border-radius: 3px;
+    padding: 22.5px 60px;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    &:hover{
+        background-color: #1c9b5e;
+    }
+    &:active{
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.develop-link {
+    text-decoration: none;
+    color: $colorAccent;
+        &:hover {
+            text-decoration: underline;
+        }
+}

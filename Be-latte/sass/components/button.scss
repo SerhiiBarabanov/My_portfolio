@@ -1,0 +1,26 @@
+.btn {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8125rem;
+	line-height: 1;
+	text-decoration: none;
+	border: 2px solid #39312f;
+	padding: 18px 60px;
+	color: #39312f;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	transition: background .1s ease-in-out,
+				color .1s ease-in-out;
+	&:active {
+		background: #39312f;
+		color: #fff;
+	}
+	@include largeDevice {
+		transition: background .2s ease-in-out,
+					color .2s ease-in-out;
+	&:hover {
+		background: #39312f;
+		color: #fff;
+		}
+	}
+}

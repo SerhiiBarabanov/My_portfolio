@@ -1,0 +1,57 @@
+.gallery
+	background: #cfcfcf
+	display: flex
+	flex-flow: row wrap
+	font-size: 0
+
+.gallery__item
+	width: 50%
+	@include media-desctop
+		width: 25%
+		position: relative
+
+.gallery__link
+	@include media-tablet
+		width: 100%
+		height: 550px
+
+.item__hover
+	display: none
+	@include media-desctop
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(22, 34, 64, .75)
+
+.hover__frame
+	@include media-desctop
+		width: 100px
+		height: 250px
+		border: 6px solid #ffd21d
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+.hover__text
+	@include media-desctop
+		@include font-size(44)
+		color: #fff
+		text-align: center
+		position: relative
+		top: 45%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 999
+
+.gallery__link
+	@include media-desctop
+		&:hover > .item__hover
+			display: inline
+
+.gallery__img
+	width: 100%
+	height: 100%
+

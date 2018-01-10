@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.maincontent {
+  flex: 1 0;
+}
+
+.footer {
+  background: #eff1f9;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.copyright {
+  color: #162240;
+  font-size: 0.815rem;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+/**
+* header
+*/
+
+.header {
+  background: #162240;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.page-nav {
+  margin-left: auto;
+}
+
+.checkbox {
+  display: none;
+}
+
+.mobile-btn {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.logo-mobile__link {
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  display: none;
+}
+
+.nav__list {
+  position: absolute;
+  background: #162240;
+  top: 53px;
+  right: 0;
+  transform-origin: center top 0;
+  transform: rotateX(90deg);
+  transition: transform .5s ease-in-out;
+}
+
+.nav__link {
+  color: #fff;
+  padding: 12px 10px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-align: center;
+  transition: color .5s ease-in-out;
+}
+
+.nav__link:active {
+  color: #ffd21d;
+}
+
+.checkbox:checked + .nav__list {
+  transform-origin: center top 0;
+  transform: rotateX(0deg);
+}
+
+/**
+* special
+**/
+
+.special__item {
+  border-top: 1px solid rgba(22,34,64, .1);
+  border-left: 1px solid rgba(22,34,64, .1);
+  border-right: 1px solid rgba(22,34,64, .1);
+  width: 100%;
+  background: #f7f8fc;
+  padding: 45px 10px;
+  text-align: center;
+  transition: background .2s ease-in-out;
+}
+
+.special__item:last-child {
+  border-bottom: 1px solid rgba(22,34,64, .1);
+}
+
+.special__img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.special__img > img {
+  margin: auto;
+}
+
+
+.special__title {
+  margin-top: 15px;
+  color: #666;
+  font-size: 1.625rem;
+  letter-spacing: 0.2px;
+  transition: color .2s ease-in-out;
+}
+
+.special__desc {
+  margin-top: 7px;
+  color: rgba(102,102,102, .75);
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  transition: color .2s ease-in-out;
+}

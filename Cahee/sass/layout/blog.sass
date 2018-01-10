@@ -1,0 +1,77 @@
+.sixth-section
+	background: #b07cf7
+
+.section__title--white, .section__text--white
+	color: #fff
+
+.section__text--white
+	margin: 0 283px
+
+.blog__list
+	display: flex
+	margin-top: 45px
+
+.blog__item
+	background: url(../img/img11.jpg) center center no-repeat
+	background-size: cover
+	width: 370px
+	height: 310px
+	box-shadow: 0 0 15px rgba(0, 0, 0, .5)
+	margin-right: 30px
+	&:last-child
+		margin-right: 0
+
+.blog__item--2
+	background: url(../img/img22.jpg) center bottom no-repeat
+	background-size: cover
+
+.blog__item--3
+	background: url(../img/img33.jpg) center center no-repeat
+	background-size: cover
+
+.blog__link
+	display: block
+	height: 100%
+	position: relative
+	transition: background .5s ease-in-out
+	&:after
+		content: 'Green Smoothies: Too Much of a Good Thing?'
+		position: absolute
+		@include raleway-bold
+		@include font-size(20)
+		color: transparent 
+		padding-left: 20px
+		bottom: 60px
+		transition: color .3s ease-in-out
+	&:before
+		content: 'By Auskteez - 2 hours ago'
+		position: absolute
+		@include raleway-light
+		@include font-size(13)
+		color: transparent
+		padding-left: 20px
+		bottom: 25px
+		transition: color .3s ease-in-out
+	&:hover
+		background: linear-gradient(to top, rgba(0, 0, 0, .5), transparent)
+	&:hover:after, &:hover:before
+		color: #fff
+
+.date
+	position: absolute
+	width: 60px
+	height: 60px
+	border-radius: 5px
+	background: rgba(0, 0, 0, .5)
+	text-align: center
+	top: 30px
+	left: 15px
+
+.date__text
+	color: #fff
+	@include raleway-bold
+	@include font-size(32)
+	@include line-height(25)
+
+.section-btn--red
+	background: #f72b3b

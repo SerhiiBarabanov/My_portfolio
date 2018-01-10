@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans";
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+
+

@@ -1,0 +1,311 @@
+@import "../libs/normalize/normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/****
+	default settings
+****/
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 0;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	width: 945px;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+body {
+	background: #fafafa;
+}
+
+.maincontent {
+	margin-top: 70px;
+}
+
+/****
+	btn-link
+****/
+
+.btn-link {
+	border-radius: 3px;
+	display: inline-block;
+	background: #00abeb;
+	padding: 8px 15px;
+	box-shadow: 0 3px 0 #008bc0;
+	transition: background .2s eade-in;
+}
+
+.btn-link:hover {
+	background: #008bc0;
+}
+
+.btn-link > span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	line-height: 0.9375rem;
+	letter-spacing: 0.5px;
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+
+.btn-link > i {
+	color: #fff;
+	vertical-align: middle;	
+}
+
+/****
+	header
+****/
+
+.header {
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+	font-size: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+
+.logo--header {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+}
+
+#text {
+	position: absolute;
+	left: -1000px;
+}
+
+.responsive-btn {
+	width: 30px;
+	height: 30px;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	will-change: display;
+	cursor: pointer;
+}
+
+
+.responsive-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.nav {
+	display: inline-block;
+	width: 50%;
+	font-size: 1rem;
+	text-align: right;
+	vertical-align: middle;
+	position: relative;
+}
+
+.nav__item {
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;
+}
+
+.nav__item:before {
+	content: '';
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .5s ease-in;
+}
+
+.nav__item:hover:before,
+.current:before {
+	background: #00abeb;
+}
+
+.nav__item:first-child {
+	margin-left: 0;
+}
+
+.nav__link {
+	font-size: 0.875rem;
+	line-height: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 27px 0;
+	display: block;
+}
+
+/****
+	parallax
+****/
+
+.parallax-block {
+	width: 100%;
+	height: 555px;
+	background-color: #00abeb;
+}
+
+.parallax-shipbuilding {
+	background: url('../img/ship-1.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.description-wrap {
+	padding-bottom: 100px;
+}
+
+/****
+	title block
+****/
+
+.title-wrap {
+	background: #fff;
+	margin-top: -145px;
+	border-radius: 2px;
+	border: 1px solid rgba(151, 151, 151, .2);
+	padding: 15px;
+}
+
+.inner-title {
+	border-radius: 2px;
+	border: 1px solid rgba(151, 151, 151, .2);
+	text-align: center;
+	padding: 40px;
+}
+
+.title__img-wrap {
+	width: 100px;
+	height: 100px;
+	background: #00abeb;
+	border-radius: 50%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.title__desc {
+	margin-top: 40px;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	line-height: 1;
+	letter-spacing: 0.5px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+/****
+	page-description
+****/
+
+.page-description {
+	margin-top: 50px;
+}
+
+.page-description__item--paragraph {
+	margin-top: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 300;
+	line-height: 1.57;
+	letter-spacing: 0.5px;
+	color: #000;
+}
+
+.page-description__item--paragraph:first-child {
+	margin-top: 0;
+}
+
+/****
+	price
+****/
+
+.price {
+	background: #fff;
+	padding: 100px 0;
+}
+
+.price__item {
+	text-align: center;
+	display: inline-block;
+	width: 185px;
+	margin-right: 60px;
+	margin-bottom: 40px;
+}
+
+.price__item:last-child {
+	margin-right: 0;
+}
+
+.price__img-wrap {
+	background: rgba(32, 32, 32, .8);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	position: relative;
+}
+
+.price__img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.price__title {
+	margin-top: 30px;
+	font-size: 1.125rem;
+	line-height: 1.33;
+	letter-spacing: 0.5px;
+	color: rgba(0, 0, 0, .87);
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+.price__desc {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.875rem;
+	line-height: 1.57;
+	letter-spacing: 0.5px;
+	color: rgba(0, 0, 0, .6);
+	margin-top: 15px;
+	display: block;
+}
+
+.price__link-wrap--offset-top {
+	margin-top: 40px;
+}

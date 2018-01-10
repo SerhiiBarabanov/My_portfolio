@@ -1,0 +1,30 @@
+@mixin font-porter
+	font-family: 'porterbold_demo', 'Arial', sans-serif
+
+@mixin font-oswald
+	font-family: 'Oswald', 'Arial', sans-serif
+
+@mixin font-montserrat-light
+	font-family: 'Montserrat', 'Arial', sans-serif
+	font-weight: 300
+
+@mixin font-montserrat-regular
+	font-family: 'Montserrat', 'Arial', sans-serif
+	font-weight: 400
+
+@mixin font-montserrat-medium
+	font-family: 'Montserrat', 'Arial', sans-serif
+	font-weight: 500
+
+@mixin font-montserrat-bold
+	font-family: 'Montserrat', 'Arial', sans-serif
+	font-weight: 700
+
+@mixin font-size($font-size)
+	font-size: $font-size / 16 + rem
+
+@mixin Center
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%,-50%)

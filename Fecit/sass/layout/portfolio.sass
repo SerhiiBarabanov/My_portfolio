@@ -1,0 +1,104 @@
+.heading--left
+	text-align: left
+	margin-bottom: 20px
+
+.section__title
+	@include font-montserrat-medium
+	@include font-size(48)
+
+.portfolio__list
+	margin-top: 45px
+	display: flex
+	flex-flow: row wrap
+	margin-right: -30px
+
+.portfolio__item
+	width: 570px
+	height: 380px
+	overflow: hidden
+	position: relative
+	margin: 0 30px 30px 0
+
+.portfolio__img-wrap
+	position: absolute
+	left: 0
+	top: 0
+
+.portfolio__img
+	width: 100%
+	height: 100%
+
+.portfolio__link
+	color: #fff
+	display: block
+	position: relative
+
+.portfolio__icon
+	position: absolute
+	color: #fff
+	z-index: 999
+	top: 30px
+	right: 17px
+	transform: scale(0)
+	transition: transform .2s ease-in-out
+
+.portfolio__item:hover .portfolio__icon
+	transform: scale(1)
+
+.portfolio__title
+	width: 100%
+	position: absolute
+	z-index: 999
+	@include font-montserrat-bold
+	@include font-size(28)
+	left: 45px
+	top: 320px
+	padding-bottom: 50px
+	transition: top .2s ease-in-out
+	&:before
+		content: ''
+		width: 70px
+		height: 2px
+		background: $common-color
+		position: absolute
+		left: 0
+		top: 45px
+		opacity: 0
+		transition: opacity .2s ease-in-out
+	&:after
+		content: 'Develop a unique identity for the brand'
+		color: #fff
+		@include font-montserrat-regular
+		@include font-size(14)
+		position: absolute
+		left: 0
+		bottom: 0
+		opacity: 0
+		transition: opacity .2s ease-in-out
+
+.portfolio__link:hover .portfolio__title
+	top: 265px
+	&:before
+		opacity: 1
+	&:after
+		opacity: 1
+
+.portfolio__btn-wrap
+	width: 115px
+	margin-top: 40px
+	margin-bottom: 70px
+
+.btn__link
+	display: flex
+	text-transform: uppercase
+	@include font-oswald
+	@include font-size(13)
+	color: #333333
+	opacity: .25
+	transition: opacity .3s ease-in-out
+	&:hover
+		opacity: 1
+
+.btn__desc
+	margin-left: 15px
+

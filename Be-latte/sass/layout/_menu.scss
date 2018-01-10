@@ -1,0 +1,102 @@
+.menu {
+	margin-bottom: 50px;
+	@include largeDevice {
+		margin-bottom: 80px;
+	}
+}
+
+.menu__list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	@include mediumDevice {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		margin-bottom: 60px;
+	}
+}
+
+.menu__item {
+	width: 100%;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@include mediumDevice {
+		margin-right: 25px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.menu__pic {
+	width: 100%;
+	height: 204px;
+	background: url('../img/cup-of-coffee.jpg') center center no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	position: relative;
+	&:after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: #ececec;
+		opacity: .7;
+		transition: background .2s ease-in-out;
+	}
+	@include largeDevice {
+		height: 294px;
+		margin-bottom: 40px;
+		&:hover:after {
+			background: #f4da81;
+		}
+	}
+}
+
+.menu__pic--tea {
+	background: url('../img/tea.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.menu__pic--desserts {
+	background: url('../img/desserts.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.menu__title {
+	width: 100%;
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 999;
+}
+
+.menu__price {
+	display: flex;
+	justify-content: center;
+}
+
+.table {
+	width: 230px;
+	font-family: 'Lato', sans-serif;
+}
+
+.table__name {
+	width: 80%;
+	font-weight: 700;
+}
+
+.table__price {
+	width: 20%;
+}
+
+.menu__btn-wrap {
+	display: flex;
+	justify-content: center;
+}

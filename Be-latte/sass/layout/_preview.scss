@@ -1,0 +1,68 @@
+.preview {
+	width: 100%;
+	height: 100vh;
+	background: url('../img/background.jpg') center center no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.45);
+	}
+	@include smallDevice {
+		height: calc(100vh - 30px);
+	}
+}
+
+.preview__descr-wrap {
+	position: relative;
+	z-index: 99;
+	@include smallDevice {
+		width: 50%;	
+	}
+	@include mediumDevice {
+		width: 650px;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 951px) {
+		width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 951px;
+	}
+}
+
+.preview__title {
+	margin: 0 0 20px 0;
+	color: $accent-color;
+	font-weight: 700;
+	font-size: 1.8rem;
+	@include smallDevice {
+		font-size: 2.2rem;
+	}
+}
+
+.preview__descr {
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 25px;
+	@include smallDevice {
+		font-weight: 600;
+	}
+	@include mediumDevice {
+		width: 50%;
+	}
+}
+
+.btn--preview {
+	border-color: #fff;
+	color: #fff;
+	
+}

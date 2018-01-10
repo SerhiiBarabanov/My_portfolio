@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet');
+@import "libs/normalize/normalize";
+@import "libs/fontawesome/font-awesome";
+@import "misc/_mixin.scss";
+@import "misc/_adjustment.scss";
+@import "misc/_vars.scss";
+
+@import "layout/components/_buttons.scss";
+@import "layout/components/_checkbox-radio.scss";
+@import "layout/components/_attachment-logo.scss";
+@import "layout/components/_social.scss";
+@import "layout/_header.scss";
+//corrected by Ivan from 'heder' to 'header'
+@import "layout/_intro.scss";
+@import "layout/_inform.scss";
+@import "layout/_diagramm.scss";
+@import "layout/_testimonial.scss";
+@import "layout/_price.scss";
+@import "layout/_contact.scss";
+@import "layout/_footer.scss";
+@import "layout/_photo_desktop_preview.scss";
+@import "layout/_form.scss";
+@import "layout/_responsive.scss";
+@import "layout/_responsive-photopage.scss";
+
+
+
+
+
+
+
+

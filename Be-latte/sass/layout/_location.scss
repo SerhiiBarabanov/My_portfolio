@@ -1,0 +1,61 @@
+.location__descr-wrap {
+	@include mediumDevice {
+		display: flex;
+	}
+}
+
+.location__descr {
+	width: 100%;
+	background: $accent-color;
+	padding: 15px;
+	@include mediumDevice {
+		width: 35%;
+		height: 425px;
+		padding: 30px;
+	}
+	@include largeDevice {
+		padding: 50px;
+	}
+}
+
+.location__title {
+	font-weight: 700;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	@include mediumDevice {
+		margin-bottom: 25px;
+	}
+}
+
+.location__text {
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 20px;
+	@include mediumDevice {
+		margin-bottom: 35px;
+	}
+}
+
+.location__table {
+	width: 175px;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 20px;
+	@include mediumDevice {
+		margin-bottom: 35px;
+	}
+}
+
+.location__table-name {
+	font-weight: 700;
+	width: 55%;
+}
+
+#map {
+	width: 100%;
+	height: 300px;
+	background: lightblue;
+	@include mediumDevice {
+		width: 65%;
+		height: 425px;
+	}
+}

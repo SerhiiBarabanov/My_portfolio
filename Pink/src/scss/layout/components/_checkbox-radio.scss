@@ -1,0 +1,98 @@
+
+
+/***
+*
+* RADIO BUTTON
+*
+***/
+//скрывание родного radio:
+
+[type="radio"]{
+    display: none;
+}
+
+.label-os::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50px;
+    transition: border .2s ease-in-out;
+}
+
+.label-os::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    background: $colorAccent;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    display: none;
+}
+
+[type="radio"]:checked ~ .label-os::after {
+    display: block;
+}
+.label-os:hover.label-os::before {
+    border: 2px solid $colorHover;
+}
+
+[type="radio"]:checked ~ .label-os::before {
+    border: 2px solid $colorAccent;
+}
+
+
+/***
+*
+* CHECKBOX ACHIEVEMENS
+*
+***/
+
+//скрытие родного чекбокса
+
+[type="checkbox"]{
+    display: none;
+}
+
+//вывод кастомного чекбокса
+
+.label-achievements::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    transition: border .2s ease-in-out;
+}
+
+    .label-achievements:hover.label-achievements::before {
+        border: 2px solid $colorHover;
+    }
+
+.label-achievements::after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 22px;
+    height: 16px;
+    background: url('../img/icon/tick-svg.png') center center no-repeat;
+    display: none;
+}
+
+//действия при активном чекбоксе:
+
+[type="checkbox"]:checked ~ .label-achievements::after{
+    display: block;
+}
+
+[type="checkbox"]:checked ~ .label-achievements::before{
+    border: 2px solid $colorAccent;
+}

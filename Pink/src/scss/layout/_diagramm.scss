@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+ body {
+ 	width: 100%;
+ }
+ .diagram {
+	 background: $inform-section-bg;
+	 
+ }
+ .diagram__container {
+	max-width: 940px;
+	padding: 0 15px;
+	position: relative;
+	margin: 0 auto;
+	background: $inform-section-bg;
+}
+.diagram__flex-container {
+	display: flex;
+}
+
+.column-left{
+	width: 300px;
+	background: url('../img/clock.png') center center no-repeat;
+}
+
+.column-right {
+	width: 600px;
+	padding: 140px 0 115px 70px;
+}
+
+.diagram__desc-title {
+	font-family: $defolt-fonts;
+	font-weight: 700;
+	font-size: 30px;
+	color: #000;
+}
+.about__desc-text {
+	font-family: $defolt-fonts;
+	font-weight: 400;
+	font-size: 18px;
+	color: #283645;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+.about__desc--link {
+	font-family: $defolt-fonts;
+	font-weight: 400;
+	font-size: 18px;
+	color: #d22856;
+}

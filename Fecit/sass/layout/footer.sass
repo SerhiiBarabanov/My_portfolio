@@ -1,0 +1,60 @@
+.section__title--center
+	text-align: center
+
+.section__desc--center
+	text-align: center
+	padding: 0 309px
+	margin-top: 30px
+
+.footer
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 100px
+	margin-bottom: 100px
+
+.address
+	@include font-montserrat-light
+	@include font-size(14)
+
+.address__link
+	color: #000
+
+.address__link--mr
+	margin-right: 45px
+	position: relative
+	&:after
+		content: '/'
+		position: absolute
+		bottom: 0
+		right: -25px
+
+
+.social__list
+	display: flex
+	border: 1px solid rgba(0, 0, 0, .1)
+	margin-right: 80px
+
+.social__item
+	width: 60px
+	height: 60px
+	border-right: 1px solid rgba(0, 0, 0, .1)
+	&:last-child
+		border-right: none
+
+.social__link
+	display: block
+	height: 100%
+	color: #000
+	display: flex
+	align-items: center
+	justify-content: center
+	@include font-size(20)
+	transition: background .3s ease-in-out
+	&:hover
+		background: $common-color
+
+.copyright
+	@include font-montserrat-light
+	@include font-size(14)
+	color: rgba(0, 0, 0, .5)

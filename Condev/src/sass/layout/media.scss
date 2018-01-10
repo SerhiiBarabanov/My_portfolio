@@ -1,0 +1,145 @@
+@media screen and (min-width: 768px) {
+
+  .logo-mobile__link, .mobile-btn {
+    display: none;
+  }
+
+  .logo__link, .nav__item, .nav__list {
+    display: inline-block;
+  }
+
+  .nav__list {
+    position: static;
+    transform: none;
+  }
+
+  .special__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .special__item {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .special__item:nth-child(2n) {
+    border-left: none;
+  }
+
+  .special__item:last-child {
+    border-bottom: none;
+  }
+
+  .special__item:hover {
+    background: #eff1f9;
+  }
+
+  .special__item:hover .special__title {
+    color: #162240;
+  }
+
+  .special__item:hover .special__desc {
+    color: rgba(102,102,102, 1);
+  }
+
+  .special__desc-wrap {
+    margin-top: auto;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .header {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .logo {
+    margin-top: 15px;
+  }
+
+  .page-nav {
+    margin: 15px 0;
+  }
+
+  .nav__item {
+    margin-right: 50px;
+    padding: 12px;
+  }
+
+  .nav__item:last-child {
+    margin-right: 0px;
+  }
+
+  .nav__link {
+    padding: 0;
+    position: relative;
+  }
+
+  .nav__link:before, .nav__link:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    top: -8px;
+    background: #ffd21d;
+    transition: all .5s ease-in-out;
+  }
+
+  .nav__link:before {
+    left: 50%;
+  }
+
+  .nav__link:after {
+    right: 50%;
+  }
+
+  .nav__link:hover:before, .nav__link:hover:after {
+    width: 50%;
+  }
+
+  .nav__link:hover {
+    color: #ffd21d;
+  }
+
+  .special__item {
+    padding: 65px 25px;
+  }
+
+  .special__title {
+    margin-top: 40px;
+  }
+
+  .special__desc {
+   margin-top: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .special__list {
+    flex-flow: row nowrap;
+  }
+
+  .special__item {
+    border-left: none;
+    border-top: none;
+  }
+
+  .special__item:last-child {
+    border-right: none;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  
+  .special__item {
+    padding: 95px 25px;
+  }
+
+}

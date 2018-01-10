@@ -1,0 +1,164 @@
+.inform{   
+     
+   
+}
+
+
+.lists--wrap{
+    width: 100%;
+    height: 100%;   
+    position: relative;
+    margin-top: 75px;
+    background: #f2f2f2;
+    
+    
+}
+
+
+.container-inform{
+    width: 940px;    
+    margin: 0 auto;          
+   
+  
+
+}
+
+.inform__desc{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            left: 0;
+            bottom: 0;
+            top: 190px;
+            -webkit-transform: skew(0deg, -4deg);
+            -ms-transform: skew(0deg, -4deg);
+            transform: skew(0deg, -4deg);
+            background: #fff;
+            z-index: 99;
+        }
+       
+    }
+
+
+
+    .inform__title{
+        text-align: center;
+        width: 740px;       
+        font-size: 3.125rem;
+        font-weight: 300;
+        margin: 80px auto 0 auto;
+
+    }
+
+    .inform__text{
+        text-align: center;
+        width: 420px;
+        margin: 0 auto;
+        font-size: 3.125rem;
+        font-weight: 300;
+        position: relative;
+        z-index: 2;
+
+    }
+
+
+
+    .inform__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       
+    }
+
+        .inform__item{
+            width: 250px;
+        }
+
+            .inform__link{
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                position: relative;
+            }              
+
+                .card__image{
+                    display: block;
+                    margin: 0 auto;
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    z-index: 997;
+                }
+
+                .phone__image{
+                    position: absolute;
+                    top: 42px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 997;
+                }
+
+                .card__text{
+                    width: 250px;
+                    margin: -90px auto 0 auto;                    
+                    background: #f2f2f2;                    
+                    box-shadow: 0px -10px 10px -9px rgba(0, 0, 0, 0.5);
+                    transition: all .2s ease-in-out;
+                    position: relative;
+                    z-index: 999;
+                }
+
+                .card__title{
+                    color: #000;                    
+                    font-size: 1.875rem;
+                    line-height: 1.875rem;
+                    font-weight: 700;
+                    margin: 0;   
+                    padding-top: 60px;                
+                    
+                }
+
+                .card__desc{
+                    color: #283645;
+                    font-size: 1.125rem;
+                    width: 230px;
+                    margin: 30px auto 0 auto; 
+                    line-height: 1.875rem;
+                }
+
+
+    .telephones__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       
+    }            
+
+        .telephones__item{
+            width: 250px;
+        }
+
+            .telephones__link{
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                position: relative;
+            }              
+
+
+
+
+
+
+   

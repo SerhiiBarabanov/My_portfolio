@@ -1,0 +1,70 @@
+// Центрующий контейнер
+@mixin container{
+    width: 940px;
+    margin: 0 auto;
+    // padding: 0 15px;
+
+   @media screen and (max-width:1210px){
+        width: 940px;
+
+    }
+
+    @media screen and (max-width:700px){
+        width: 620px;
+    } 
+
+    @media screen and (max-width:320px){
+        width: 280px;
+    } 
+}
+
+@mixin size ($font){
+    font-size: $font;
+    line-height: $font + 2px;
+}
+
+// Флекс контейнер отцентрованный
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Флекс контейнер растянутый по бокам
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Флекс контейнер колоночный
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Заглавный текст красный цвет
+@mixin textAccent {
+    color: $colorAccent;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+}
+
+// Текст на странице, черный
+@mixin textDefolt {
+    color: #283645;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+//inclination for logo in header and footer
+@mixin center-logo{
+    position: relative;
+    top: -8px;
+}

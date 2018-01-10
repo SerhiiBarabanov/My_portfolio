@@ -1,0 +1,85 @@
+$body-color: #fff;
+$accent-color: #f5d76e;
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  background: $body-color;
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.maincontent {
+  flex-grow: 1;
+  @include smallDevice {
+    padding: 15px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .6);
+  z-index: 99;
+}
+
+.content-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #28211f;
+  @include smallDevice {
+    line-height: 1.5rem;
+  }
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #39312f;
+  margin-bottom: 50px;
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: url('../img/cap.png');
+  }
+  @include smallDevice {
+    font-size: 2rem;
+  }
+
+  @include mediumDevice {
+    padding-top: 110px;
+  }
+}

@@ -1,0 +1,100 @@
+.fourth-section
+	background: #f0f0f0
+
+.cards-wrap
+	display: flex
+	flex-flow: row nowrap
+
+.cards__desc-wrap
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	padding-right: 75px
+	margin-top: -100px
+	width: 400px
+	flex-shrink: 0
+
+.cards__list-wrap
+	flex-shrink: 0
+	width: 770px
+
+.section__desc
+	@include font-montserrat-regular
+	@include font-size(22)
+	margin-top: 40px
+	line-height: 1.875rem
+
+.cards__desc
+	@include font-montserrat-regular
+	@include font-size(22)
+	margin-top: 40px
+	line-height: 1.875rem
+
+
+.cards__list
+	display: flex
+	flex-flow: row wrap
+	margin-right: -30px
+	margin-bottom: 70px
+	perspective: 2000px
+
+.cards__item
+	background: #fff
+	width: 370px
+	height: 410px
+	position: relative
+	transform-style: preserve-3d;
+	transition: transform .5s ease-in-out
+	margin-right: 30px
+	margin-bottom: 30px
+
+.cards__item:hover 
+	transform: rotateY(180deg);
+
+.cards__front, .cards__back
+	position: absolute
+	backface-visibility: hidden
+
+.cards__front
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+.cards__img
+	width: 75px
+	height: 75px
+
+.cards__title
+	@include font-montserrat-medium
+	@include font-size(28)
+	margin-top: 20px
+
+.cards__back
+	width: 100%
+	height: 100%
+	padding: 45px 50px 75px 50px
+	transform: rotateY(180deg);
+
+.cards__desc--title
+	margin-top: 0
+
+.cards__back-text
+	@include font-montserrat-light
+	@include font-size(16)
+	margin-top: 37px
+	line-height: 1.5rem
+
+.cards__back-list
+	@include font-montserrat-regular
+	@include font-size(16)
+	margin: 37px 0 -23px 0
+
+.cards__back-item
+	margin-bottom: 23px
+	&:before
+		content: '—'
+		color: $common-color
+		margin-right: 10px

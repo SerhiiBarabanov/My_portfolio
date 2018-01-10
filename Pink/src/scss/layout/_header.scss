@@ -1,0 +1,122 @@
+//corrected by Ivan from 'heder' to 'header'
+.main-header  {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+
+
+
+    .container {
+        @include container;
+    }
+
+        .header-content{
+            @include flex;
+            padding: 27px 0 42px 0;
+        }
+        .logo-header{
+            @include center-logo;
+        }
+        .logo-header--bg {
+            background: url('../img/logotype-white-desktop.png') center center no-repeat;
+            background-size: cover;
+            width: 147px;
+            height: 40px;
+        }
+
+        .header-nav {
+            width: 625px;
+        }
+
+            .nav__list {
+                padding: 0;
+                margin: 5px 0 0 0; //for centering header
+                list-style: none;
+                @include flex;
+            }
+
+                .nav__item {
+                    position: relative;
+                    margin-right: 80px;
+                    
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+                .nav__item::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: $colorAccent;
+                    transition: width .2s ease-in-out;
+                }
+
+               
+
+                .nav__link {
+                    padding: 8px 0;
+                    display: block;
+                    text-decoration: none;
+                    font-family: $defolt-fonts;
+                    color: #ffffff;
+                    font-size: 1.125rem;
+                    font-weight: 400;
+                    line-height: 1.125rem; 
+                    transition: color .2s ease-in-out;
+                }
+                .nav__link:hover  {
+                    color: $colorAccent;
+                }
+                .nav__link:active {
+                    color: $colorClick;
+                }
+                .nav__item:hover.nav__item::before {
+                    width: 100%;
+                }
+
+/***
+*
+* RESPONSIVE MENU
+*
+***/
+
+.label-nav,
+.label-nav--closed {
+    font-size: 30px;
+    width: 15px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.label-nav:hover {
+    color: $colorAccent;
+}
+
+.label-nav--closed:hover {
+    color: $colorAccent;
+}
+
+.label-nav:active {
+    color: $colorClick;
+}
+
+.label-nav--closed:active {
+    color: $colorClick;
+}
+
+
+.input-nav {
+    display: none;
+}
